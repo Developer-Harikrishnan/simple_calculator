@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="calc.js"></script>
+    <link rel="stylesheet" href="cal.css">
+</head>
+<body>
+    <div id=calculator class="container p-5 my-5 border">
+        <div class="card ">
+            <div class="card-header bg-info">
+                <h3>Calculator</h3>
+            </div>
+            <div class="card-body">
+                <div>
+                    <div class="mb-3 mt-3">
+                        <label for="number1" class="form-label">Enter First Number</label>
+                        <input  class="form-control"  name="firstno" id="firstno">
+                    </div>
+                    <div class="mb-3 mt-3">
+                        <label for="number2" class="form-label">Enter Second Number</label>
+                        <input  class="form-control"  name="secondno" id="secondno">
+                    </div>
+                </div>
+                <div>
+                    <p>Choose operator</p>
+                       <button class="btn btn-primary" onClick="calc('+')">+</button>
+                       <button class="btn btn-success" onClick="calc('-')">-</button>
+                       <button class="btn btn-secondary" onClick="calc('*')">*</button>
+                       <button class="btn btn-info" onClick="calc('/')">/</button>
+                </div>
+                <div class="mb-3 mt-3">
+                    <p id="output"></p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>
